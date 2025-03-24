@@ -24,10 +24,10 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::useBootstrapFive();
         Paginator::useBootstrapFour();
-        View::share('budgetcategories',$this->shareCategories());
+        // View::share('budgetcategories',$this->shareCategories());
     }
 
     private function shareCategories(){
-        return budgetcategory::all();
+        // return budgetcategory::all();
     }
 }
